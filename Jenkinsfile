@@ -1,7 +1,7 @@
 pipeline {
   agent {label 'lin_node'}
   options {
-    buildDiscarder(logRotator(numToKeepStr: '5'))
+    buildDiscarder(logRotator(numToKeepStr: '6'))
   }
   stages {
     stage('Build') {
